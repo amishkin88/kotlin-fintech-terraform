@@ -1,3 +1,11 @@
+variable "subscription_id" {
+    description = "subscription_id"
+}
+
+variable "tenant_id" {
+    description = "tenant_id"
+}
+
 provider "azurerm" {
     version = "~>1.32.0"
     subscription_id = "${var.subscription_id}"
